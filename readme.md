@@ -1,16 +1,16 @@
-## 项目概述
+## Project Overview
 
-* 项目名称：laravel-adminlte
-* 演示地址：http://111.231.118.189:8888/admin
-  演示账号/密码：admin/123456
+* project name：laravel-adminlte
+* Demo address：http://111.231.118.189:8888/admin
+ Demo account/password：admin/123456
 
-laravel-adminlte是一个简洁的后台管理系统基础框架
+laravel-adminlte Is a simple background management system infrastructure
 
-## 功能如下
-- 菜单管理
-- 后台用户管理
-- 角色管理
-- 权限管理
+## Function is as follows
+- Menu management
+- Background user management
+- Role management
+- authority management
 
 ## 运行环境要求
 
@@ -18,30 +18,32 @@ laravel-adminlte是一个简洁的后台管理系统基础框架
 - PHP 5.6+
 - Mysql 5.7+
 
-## 开发环境部署/安装
+## Development environment deployment/installation
 
-本项目代码使用php框架laravel5.4开发
+This project code is developed using the php framework laravel5.4
 
-### 基础安装
+### Basic installation
 
-#### 1. 克隆源代码
+#### 1. Clone source code
 
-克隆 `laravel-adminlte` 源代码到本地：
+clone `laravel-adminlte` Source code to local：
 
     git clone https://github.com/zzDylan/laravel-adminlte
 
 
-#### 2. 安装扩展包依赖
+#### 2. Install extension package dependencies
 
 	composer update
 
-#### 3. 生成配置文件
+#### 3. Generate configuration file
 
 ```
 cp .env.example .env
+
+php artisan key:generate
 ```
 
-你可以根据情况修改 `.env` 文件里的内容，如数据库连接、缓存、邮件设置、七牛云存储等：
+You can modify it according to the situation `.env` The contents of the file, such as database connection, cache, mail settings, seven cattle cloud storage, etc.:
 
 ```
 APP_URL=http://localhost
@@ -59,22 +61,22 @@ QINIU_SECRET_KEY=XXX
 QINIU_BUCKET=XXX
 ```
 
-#### 4. 生成数据表
+#### 4. Generating data table
 
-在网站根目录下运行以下命令
+Run the following command in the root of the website
 
 ```shell
 php artisan migrate
 ```
 
-#### 5.生成菜单数据以及初始管理员数据
+#### 5.Generate menu data and initial administrator data
 
 ```shell
 php artisan db:seed
 ```
 
 
-#### 6. 生成秘钥
+#### 6. Generate key
 
 ```shell
 php artisan key:generate
