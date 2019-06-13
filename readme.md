@@ -12,7 +12,7 @@ laravel-adminlte Is a simple background management system infrastructure
 - Role management
 - authority management
 
-## 运行环境要求
+## Operating environment requirements
 
 - Nginx 1.8+
 - PHP 5.6+
